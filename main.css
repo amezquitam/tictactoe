@@ -1,0 +1,75 @@
+:root {
+    --outl-color: rgb(73, 73, 73);
+    --cel-color: #bc8f8f;
+    --back-color: rgb(29, 45, 45);
+    --cel-width: 80px;
+}
+
+.X {
+    background-image: url(/img/x.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.O {
+    background-image: url(/img/o.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cel {
+    width: var(--cel-width);
+    height: var(--cel-width);
+    background-color: var(--cel-color);
+    outline: 1px var(--outl-color) solid;
+    transition: .4s;
+}
+
+.cel:hover {
+    opacity: 80%;
+}
+
+.cel:first-child {
+    border-start-start-radius: 10px;
+}
+
+.cel:nth-child(3) {
+    border-start-end-radius: 10px;
+}
+
+.cel:nth-child(7) {
+    border-end-start-radius: 10px;
+}
+
+.cel:last-child {
+    border-end-end-radius: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min-content;
+}
+
+#game {
+    border-radius: 20px;
+}
+
+#back {
+    min-height: 100dvh;
+    background-color: var(--back-color);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
