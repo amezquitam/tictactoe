@@ -6,14 +6,14 @@
 }
 
 .X {
-    background-image: url(img/x.png);
+    background-image: url(/tictactoe/img/x.png);
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .O {
-    background-image: url(img/o.png);
+    background-image: url(/tictactoe/img/o.png);
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
